@@ -23,8 +23,8 @@
                     echo $this->Form->create('Follow');
                     echo $this->Form->hidden('user_id', array('value' => $user['id']));
                     echo $this->Form->hidden('follow_id', array('value' => $follower['User']['id']));
-                    var_dump($follower['User']['id']);
                     var_dump($follow_result);
+                    var_dump($user['id']);
                     if($follower['User']['id'] == $user['id']) {
                         echo $this->Form->end();
                     }elseif($follow_result ==! 0){
