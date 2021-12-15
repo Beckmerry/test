@@ -204,11 +204,7 @@ class UsersController extends AppController {
              $datas = $this->User->find('all');
              $this->set('datas',$datas);
         }
-        
-        // $box = $this->Post->find('first', array("fields" => "MAX(Post.id) as max_id"));
-        // $id = $box[0]['max_id'];
-        // $twe = $this->Post->findById($id);
-        // $this->set('twe', $twe);
+
     }
 
     public function delete($id) {
